@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cp Javascript</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Checkpoint III - Javascript</h1>
+        <h2>Calculando o indice de massa corporal</h2>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Abaixo de 17</td>
+                    <td>Muito abaixo do peso ideal</td>
+                </tr>
+
+                <tr>
+                    <td>Entre 17 e 18.49</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+
+                <tr>
+                    <td>Entre 18.5 e 24.99</td>
+                    <td>Peso normal</td>
+                </tr>
+
+                <tr>
+                    <td>Entre 25 e 29.99</td>
+                    <td>Acima do peso</td>
+                </tr>
+
+                <tr>
+                    <td>Entre 30 e 34.99</td>
+                    <td>Obesidade grau 1</td>
+                </tr>
+
+                <tr>
+                    <td>Entre 35 e 39.99</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+
+                <tr>
+                    <td>Acima de 40</td>
+                    <td>Obesidade grau 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <div>
+                <label for="peso">Seu peso em KG</label>
+                <input type="number" min="1" id="peso" class="peso">
+            </div>
+
+            <div>
+                <label for="altura">Sua altura em metros</label>
+                <input type="text" id="altura" class="altura">
+            </div>
+
+
+            <!-- button não atualiza a pagina -->
+            <input type="button" value="Calcular" class="botao-calcular js-botao-calcular">
+        </form>
+
+        <p class="resultado js-resultado"></p>
+    </main>
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>
